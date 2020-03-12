@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a=Number(prompt('nhap so a: '));
+    let b=Number(prompt('nhap so b: '));
+    let c=Number(prompt('nhap so c: '));
+    if(a===0){
+        let result=(-c/b);
+        alert('gia tri x= ');
+    }else{
+        let delta=(b*b-4*a*c);
+        if(delta<0){
+            alert('phuong trinh vo nghiem ');
+        }else if(delta===0){
+            let x=(-b/2*a);
+            alert('gia tri x= '+x);
+        }else {
+            let x1=((-b+Math.sqrt(delta))/(2*a));
+            let x2=((-b-Math.sqrt(delta))/(2*a));
+            document.write('gia tri cua x1 la: '+x1);
+            document.write('gia tri cua x2 la: '+x2);
+        }
+    }
+</script>
+</body>
+</html>

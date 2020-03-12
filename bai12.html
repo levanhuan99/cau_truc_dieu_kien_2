@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let borrowMoney=Number(prompt('nhap so tien ba vay: '));
+    let month=Number(prompt('nhap so thang: '));
+    let interst=Number(prompt('nhap lai xuat hang thang: '));
+
+    for (let i=0;i<month;i++){
+        let laiHangThang = borrowMoney*(interst/100);
+        borrowMoney+=laiHangThang;
+    }
+    document.write(borrowMoney);
+
+</script>
+</body>
+</html>

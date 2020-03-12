@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let soDien=Number(prompt('nhap so dien: '));
+    if (soDien>0 &&soDien<50){
+        let soTien=soDien*1500;
+        alert('gia tien dien la: '+ soTien);
+    }else if(soDien>=50 && soDien<=100){
+        let soTien=soDien*2000;
+        alert('gia tien dien la:'+soTien);
+   }else if(soDien>100 &&soDien<300){
+        let soTien=soDien*3000;
+        alert('gia tien dien la:'+soTien);
+    }else if (soDien>=300){
+        let soTien=soDien*4000;
+        alert('gia tien dien la:'+soTien);
+    }else {
+        alert('xin loi hay nhap lai so dien.khong co so dien am');
+
+    }
+
+</script>
+</body>
+</html>
